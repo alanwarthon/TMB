@@ -125,5 +125,6 @@ button:active {
     }
     .rowButton {
         padding: 15px 0; /* espacio entre filas */
+        width: 80%;
     }
 }
