@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
+    
 
     width: 400px; /* ancho máximo para escritorio */
     max-width: 95%; /* asegura que no se pase del 95% en móvil */
@@ -86,7 +86,7 @@ button:active {
     .container {
         width: 90%; /* casi todo el ancho de la pantalla */
         padding: 15px;
-        background-color: yellow;
+        
     }
 
     .fancy-input {
