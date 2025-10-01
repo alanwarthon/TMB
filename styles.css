@@ -91,10 +91,12 @@ button:active {
 
     .fancy-input {
         width: 100%; /* ocupa todo el ancho del contenedor */
+        background-color: aqua;
     }
 
     .fancy-input input {
         width: 100%; /* input ocupa todo el ancho del fancy-input */
+        
     }
 
     button {
@@ -109,10 +111,18 @@ button:active {
     }
 
     .row {
-        flex-direction: column; /* apila elementos en lugar de horizontal */
-        align-items: stretch;
+        
+        
+        width:90%;
+        justify-content: center;
     }
 
+    .row2 {
+        flex-direction: column; /* apila elementos en lugar de horizontal */
+        align-items: stretch;
+        
+        width: 80%;
+    }
     .rowButton {
         padding: 15px 0; /* espacio entre filas */
     }
