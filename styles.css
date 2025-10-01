@@ -86,6 +86,7 @@ button:active {
     .container {
         width: 90%; /* casi todo el ancho de la pantalla */
         padding: 15px;
+        background-color: yellow;
     }
 
     .fancy-input {
