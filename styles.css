@@ -1,21 +1,34 @@
 body{
     background-color: beige;
+    margin: 0;
+    box-sizing: border-box;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aqua;
+
+    width: 400px; /* ancho máximo para escritorio */
+    max-width: 95%; /* asegura que no se pase del 95% en móvil */
+    margin: 20px auto;
+    padding: 20px;
     
 }
 .row{
   
     display: flex;
     align-items: center;
+
+    
+    
+
     
 }
 .row label{
     
     padding: 15px;
+    font-size: 16px;
 }
 .fancy-input {
     display: flex;
@@ -46,6 +59,8 @@ body{
  
     padding: 20px;
 
+    
+
 }
 button{
     background-color: rgba(165, 170, 169, 0.872);
@@ -65,4 +80,39 @@ button:hover {
 button:active {
     transform: translateY(2px); /* simula que se hunde */
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* casi todo el ancho de la pantalla */
+        padding: 15px;
+    }
+
+    .fancy-input {
+        width: 100%; /* ocupa todo el ancho del contenedor */
+    }
+
+    .fancy-input input {
+        width: 100%; /* input ocupa todo el ancho del fancy-input */
+    }
+
+    button {
+        width: 100%; /* botón ocupa todo el ancho del contenedor */
+        height: 50px; /* más alto para ser más fácil de tocar */
+        font-size: 18px; /* letra más grande */
+    }
+
+    .row label {
+        padding: 10px 5px; /* ajusta el espacio de las etiquetas */
+        font-size: 16px; /* etiqueta más grande */
+    }
+
+    .row {
+        flex-direction: column; /* apila elementos en lugar de horizontal */
+        align-items: stretch;
+    }
+
+    .rowButton {
+        padding: 15px 0; /* espacio entre filas */
+    }
 }
