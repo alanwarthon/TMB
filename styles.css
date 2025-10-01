@@ -1,0 +1,68 @@
+body{
+    background-color: beige;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.row{
+  
+    display: flex;
+    align-items: center;
+    
+}
+.row label{
+    
+    padding: 15px;
+}
+.fancy-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 220px;
+    background-color: #fff;
+}
+
+.fancy-input input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 180px;
+    font-size: 16px;
+}
+
+.fancy-input span {
+    padding: 8px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #555;
+}
+
+.rowButton{
+ 
+    padding: 20px;
+
+}
+button{
+    background-color: rgba(165, 170, 169, 0.872);
+    width: 150px;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid #ccc;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+button:hover {
+    background-color: rgba(140, 145, 144, 0.9);
+}  
+button:active {
+    transform: translateY(2px); /* simula que se hunde */
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TMB Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <!--Title-->
+        <div class="row">
+            <h1>TBM Calculator</h1>
+        </div>
+        <!--Gender-->
+        <div class="row">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label>
+                  <input type="radio" name="sex" value="man" checked>
+                  Man
+                </label>
+                <label>
+                  <input type="radio" name="sex" value="woman">
+                  Woman
+                </label>
+            </div>
+        </div>
+        <!--Age-->
+        <div class="row2">
+            <label>Age:</label>
+            <div class="fancy-input">
+                <input type="number" min="0" max="120" placeholder="" value="0">
+                <span>years</span>
+            </div>
+        </div>
+        <!--Weight-->
+        <div class="row2">
+            <label>Weight:</label>
+            <div class="fancy-input">
+                <input type="number" min="0" max="160" placeholder="" value="0">
+                <span>kg</span>
+            </div>
+        </div>
+        <!--Height-->
+        <div class="row2">
+            <label>Height:</label>
+            <div class="fancy-input">
+                <input type="number" min="0" max="220" placeholder="" value="0">
+                <span>cm</span>
+            </div>
+        </div>
+        <!--Button Calculate-->
+        <div class="rowButton">
+            <button>Calculate</button>
+        </div>
+      
+      
+      
+    </div>
+
+    <script src="script01.js"></script>
+  </body>
+</html>
