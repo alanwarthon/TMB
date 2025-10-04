@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TMB Calculator</title>
+    <title>BMR Calculator</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
     <div class="container">
         <!--Title-->
         <div class="row">
-            <h1>TBM Calculator</h1>
+            <h1>BMR Calculator</h1>
         </div>
         <!--Gender-->
         <div class="row">
@@ -30,7 +30,7 @@
         <div class="row2">
             <label>Age:</label>
             <div class="fancy-input">
-                <input type="number" min="0" max="120" placeholder="">
+                <input id = "txtAge" type="number" min="0" max="120" placeholder="">
                 <span>years</span>
             </div>
         </div>
@@ -38,7 +38,7 @@
         <div class="row2">
             <label>Weight:</label>
             <div class="fancy-input">
-                <input type="number" min="0" max="160" placeholder="" >
+                <input id = "txtWeight"type="number" min="0" max="160" placeholder="" >
                 <span>kg</span>
             </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="row2">
             <label>Height:</label>
             <div class="fancy-input">
-                <input type="number" min="0" max="220" placeholder="" >
+                <input id = "txtHeight" type="number" min="0" max="220" placeholder="" >
                 <span>cm</span>
             </div>
         </div>
@@ -55,6 +55,10 @@
             <button id="btnCalculate">Calculate</button>
         </div>
       
+        <!--Report-->
+        <div>
+            <h5 id="results"></h5>
+        </div>
       
       
     </div>
