@@ -56,8 +56,31 @@
         </div>
       
         <!--Report-->
-        <div>
+        <div id="BMR_div">
+            <p><strong>BMR (Basal Metabolic Rate)</strong> is the number of calories your body 
+                burns at rest to keep vital functions like breathing, circulation, and organ activity working. Knowing your 
+                BMR helps estimate how many calories you need daily to maintain, lose, or gain weight.</p>
             <h5 id="results"></h5>
+            <div id="levelActivityQuestion" style="visibility: hidden">
+                <p>Choose you level of activity: </p>
+                <select id="options" name="options">
+                    <option value="option0">Choose</option>
+                    <option value="option1">Sedentary</option>
+                    <option value="option2">Light</option>
+                    <option value="option3">Moderate</option>
+                    <option value="option4">Intense</option>
+                    <option value="option5">Very intense</option>
+                </select>
+
+                <p id="activityDescription"></p>
+                <h2 id="caloriesPerDay"></h2>
+                <div id="buttonsQuestion">
+                    <button class="btnWeight" id="btnLose">Lose weight?</button>
+                    <button class="btnWeight" id="btnGain">Gain weight?</button>
+                    <h4 id="msgFinal"></h4><h3 id="kcalneeded"></h3>
+                </div>
+                  
+            </div>
         </div>
       
       

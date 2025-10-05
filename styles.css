@@ -81,7 +81,57 @@ button:active {
     transform: translateY(2px); /* simula que se hunde */
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
+#BMR_div{
+    background-color: white;
+    width:75%;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+#BMR_div h5{
+    
+    text-align: center;
+}
+#levelActivityQuestion p{
+    
+    display:inline-block;
+    width: auto;
+
+
+}
+#results{
+    color:darkblue;
+}
+
+#activityDescription{
+
+    color:gray;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#caloriesPerDay{
+    color:darkblue;
+    text-align: center;
+}
+
+#buttonsQuestion{
+    
+    text-align: center;
+}
+.btnWeight{
+    
+    width: 40%;
+    align-items: center;
+    height: 30px;
+    font-size: small;
+}
+
+#kcalneeded{
+    color:blue;
+}
 @media (max-width: 600px) {
     .container {
         width: 90%; /* casi todo el ancho de la pantalla */
@@ -127,4 +177,6 @@ button:active {
         padding: 15px 0; /* espacio entre filas */
         width: 80%;
     }
+
+    
 }
